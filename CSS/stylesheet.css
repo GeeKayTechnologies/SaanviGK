@@ -45,10 +45,15 @@ nav{
     /* align-content: center; */
     /* text-align: center; */
     
-}
-nav>a{
-    color: cornsilk;
     
+}
+/* nav a:after,nav a:before{
+    transition: all;
+  
+    
+} */
+nav a:hover{
+    color: rgb(182, 179, 179);
 }
 table{
     margin: 0%;
