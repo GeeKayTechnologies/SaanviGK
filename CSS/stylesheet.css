@@ -38,12 +38,12 @@ nav{
     background-color: rgb(10, 10, 39);
    
     font-family: Arial, Helvetica, sans-serif;
-    nav-left: auto;
+    /* nav-left: auto; */
     padding: 20px;
-    direction: rtl;
+    /* direction: rtl; */
     color: rgb(2, 2, 2);
-    align-content: center;
-    text-align: center;
+    /* align-content: center; */
+    /* text-align: center; */
     
 }
 nav>a{
