@@ -16,15 +16,15 @@
             <a href="Contact1.html">Contact Me</a>
         </nav>
     </div>
-   <form method="get">
-      
+   <form method="get" class="form-example">
+           
        <table class="contactform">
            <tr>
                <td>
                 <Label>First Name</Label>
                </td>
                <td>
-<input type="text" name="Name" value="Your Name">
+<input type="text" name="Name"  id="_name" required>
                </td>
            </tr>
            <tr>
@@ -32,7 +32,7 @@
              <Label>Your E-mail</Label>
             </td>
             <td>
-<input type="email" name="Email"  value="Enter your e-mail">
+<input type="email" name="Email" id="_email"  required >
             </td>
         </tr>
         <tr>
@@ -40,19 +40,20 @@
              <Label>Your Mobile Number</Label>
             </td>
             <td>
-<input type="number" maxlength="10" name="Mobile"  value="Mobile Numbe">
+<input type="number" maxlength="10" name="Mobile" >
             </td>
         </tr>
         <tr>
             <td>
 
             </td>
-            <td align="center"> 
-                <input class="btn" type="button" value="Submit">
+            <td > 
+                
+                <input class="btn" type="button" value="Submit" >
             </td>
         </tr>
        </table>
-      
+    
    </form>
     
 </body>
