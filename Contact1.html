@@ -5,6 +5,38 @@
     <link rel="shortcut icon" href="Images/favicon-96x96.png" type="image/x-icon">
     <link rel="icon" href="Images/favicon-96x96.png" type="image/x-icon">
     <title>Contact ME</title>
+
+    <script>
+        function function1() {
+    
+        var name1 =document.getElementById('_name');
+        // var email=document.getElementById('_email');
+        // var mobileno=document.getElementById('_Mobile');
+        // if(name1.value==""){
+        //     window.alert("Please enetr your name");
+        //     name.focus();
+        //     return false;
+        // }
+
+        // if(email.value==""){
+        //     window.alert("Please enetr your e-mail");
+        //     name.focus();
+        //     return false;
+        // }
+        // return true;
+        if(name1.value!="'")
+        // {
+        //     alert("Please Enter your Name");
+        //     return false
+        // }
+        // else
+        alert("Thank you "+  name1.value +"!!" );
+
+        //window.alert("Thank you for sharing your details");
+
+
+        }
+        </script>
  </head>
 <body>
     <div>
@@ -16,7 +48,7 @@
             <a href="Contact1.html">Contact Me</a>
         </nav>
     </div>
-   <form method="get" class="form-example">
+   <form method="get" class="form-example" onsubmit="return function1()">
            
        <table class="contactform">
            <tr>
@@ -40,16 +72,15 @@
              <Label>Your Mobile Number</Label>
             </td>
             <td>
-<input type="number" maxlength="10" name="Mobile" >
+<input type="number" maxlength="10" id="_Mobile" >
             </td>
         </tr>
         <tr>
             <td>
 
             </td>
-            <td > 
-                
-                <input class="btn" type="button" value="Submit" >
+            <td colspan="2">                 
+                <input class="btn" type="button" value="Submit" onclick="function1()" >
             </td>
         </tr>
        </table>
