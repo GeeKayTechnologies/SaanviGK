@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="CSS/stylesheet.css"> 
+    <link rel="stylesheet" href="CSS/stylesheet.css">
     <link rel="shortcut icon" href="Images/favicon-96x96.png" type="image/x-icon">
     <link rel="icon" href="Images/favicon-96x96.png" type="image/x-icon">
     <title>Contact ME</title>
 
     <script>
         function function1() {
-    
-        var name1 =document.getElementById('_name');
-        // var email=document.getElementById('_email');
-        // var mobileno=document.getElementById('_Mobile');
-        // if(name1.value==""){
-        //     window.alert("Please enetr your name");
-        //     name.focus();
-        //     return false;
-        // }
 
-        // if(email.value==""){
-        //     window.alert("Please enetr your e-mail");
-        //     name.focus();
-        //     return false;
-        // }
-        // return true;
-        if(name1.value=="")
-        {
-            alert("Please Enter your Name");
-            _name.focus();
+            var name1 = document.getElementById('_name');
+            var email = document.getElementById('_email');
+            var mobileno = document.getElementById('_Mobile');
+            // if(name1.value==""){
+            //     window.alert("Please enetr your name");
+            //     name.focus();
+            //     return false;
+            // }
+
+            // if(email.value==""){
+            //     window.alert("Please enetr your e-mail");
+            //     name.focus();
+            //     return false;
+            // }
+            // return true;
+            if (name1.value == "") {
+                alert("Please Enter your Name");
+                _name.focus();
+
+            }
+            if (email.value == "") {
+                alert("Please Enter your E-mail");
+                _email.focus();
+
+            }
+            if (mobileno.value == "") {
+                alert("Please Enter your Mobile number");
+                _Mobile.focus();
+
+            }
+
+
+            //     return false
+            // }
+            else {
+                // var msg = "Your detail are,"
+                // msg += newLine;
+                // msg += name1.value;
+                // msg += newLine;
+                // msg += email.value;
+                // msg += newLine;
+                // msg += mobileno.value
+                // msg += "Thank You"
+                alert("Thank you" + name1.value + "!!" );
+                // alert(msg);
+            }
+
+
+            //window.alert("Thank you for sharing your details");
+
 
         }
-       
-      
-        //     return false
-        // }
-        else
-        alert("Thank you "+  name1.value +"!!" );
+    </script>
+</head>
 
-        //window.alert("Thank you for sharing your details");
-
-
-        }
-        </script>
- </head>
 <body>
     <div>
         <!-- <h1 id="name"> Saanvi G.K.</h1> -->
@@ -53,47 +75,48 @@
             <a href="Contact1.html">Contact Me</a>
         </nav>
     </div>
-   <form method="get" class="form-example" onsubmit="return function1()">
-           
-       <table class="contactform">
-           <tr>
-               <td>
-                <Label>First Name</Label>
-               </td>
-               <td>
-<input type="text" name="Name"  id="_name" required>
-               </td>
-           </tr>
-           <tr>
-            <td>
-             <Label>Your E-mail</Label>
-            </td>
-            <td>
-<input type="email" name="Email" id="_email"  required >
-            </td>
-        </tr>
-        <tr>
-            <td>
-             <Label>Your Mobile Number</Label>
-            </td>
-            <td>
-<input type="number" maxlength="10" id="_Mobile" >
-            </td>
-        </tr>
-        <tr>
-            <td>
+    <form method="get" class="form-example" onsubmit="return function1()">
 
-            </td>
-            <td colspan="2">                 
-                <input class="btn" type="button" value="Submit" onclick="function1()" >
-            </td>
-        </tr>
-       </table>
-    
-   </form>
-    
+        <table class="contactform">
+            <tr>
+                <td>
+                    <Label>First Name</Label>
+                </td>
+                <td>
+                    <input type="text" name="Name" id="_name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <Label>Your E-mail</Label>
+                </td>
+                <td>
+                    <input type="email" name="Email" id="_email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <Label>Your Mobile Number</Label>
+                </td>
+                <td>
+                    <input type="number" maxlength="10" id="_Mobile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td colspan="2">
+                    <input class="btn" type="button" value="Submit" onclick="function1()">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
 </body>
 <div class="footerr">
     <h5>Copyright@2015</h5>
 </div>
+
 </html>
