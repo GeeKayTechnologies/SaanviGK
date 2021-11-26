@@ -66,8 +66,11 @@ table{
     margin: 0%;
 }
 .footerr{
+    position: absolute;
+    margin: 25% 25% 25% 25%;
  
- text-align: center;
+
+ background-color: rgb(89, 89, 238);
 }
 p{
     font-size: 20px;
@@ -76,6 +79,7 @@ h1{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .dancecollection {
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -89,6 +93,7 @@ h1{
 .navbar{        
         margin-left: auto;
         margin-right: auto;
+       
     }
 
 .contactform {
@@ -125,6 +130,7 @@ h1{
         min-height: 100%; */
         height:95%;
         width:auto;
+       
         background: #000;
         -webkit-backface-visibility:hidden;
         backface-visibility: hidden;
@@ -163,15 +169,7 @@ h1{
                 animation-delay: 24s;
     }
     */
-    .slowFade .slide:nth-child(7) img {
-        -webkit-animation-delay: 36s;
-                animation-delay: 36s;
-    }
-
-    .slowFade .slide:nth-child(6) img {
-        -webkit-animation-delay: 28s;
-                animation-delay: 28s;
-    }
+   
 
     .slowFade .slide:nth-child(1) img {
         -webkit-animation-delay: 20s;
@@ -196,6 +194,15 @@ h1{
         -webkit-animation-delay: 0s;
                 animation-delay: 0s;
     }
+    .slowFade .slide:nth-child(7) img {
+        -webkit-animation-delay: 36s;
+                animation-delay: 36s;
+    }
+
+    .slowFade .slide:nth-child(6) img {
+        -webkit-animation-delay: 28s;
+                animation-delay: 28s;
+    }
 
     @keyframes slowFade {
         25% {
@@ -219,8 +226,34 @@ h1{
 
  
 .slides{
-    margin-left: auto;
-    margin-right: auto;
+  position:absolute;
+  top: 100px; 
+left: 25%;
+  bottom: 500px;
+  right: 25%;
+  
+  width: auto;
+  height: 400px;
 }
 
-    
+.slide{
+    width: 500px;
+    height: 40px;
+}
+
+
+
+
+    nav{
+        width: 100%;
+        position:fixed;
+        top: 0px;
+    }
+
+    .form-example{
+        position: absolute;
+        margin: 5% 25% 25% 25%;
+    }
+
+ 
+ 
