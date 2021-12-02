@@ -255,5 +255,10 @@ left: 25%;
         margin: 5% 25% 25% 25%;
     }
 
- 
- 
+ .a-text{
+    display: inline;
+     color: rgb(154, 196, 197);
+ }
+ .counter {
+     pointer-events: none;
+ }
